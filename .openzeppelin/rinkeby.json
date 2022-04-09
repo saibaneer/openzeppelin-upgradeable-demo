@@ -1,0 +1,92 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xe007C19feC32e25942DB87C815b7C931d3550977",
+    "txHash": "0x5a9fbfe969f1738ee7e015d3de8a65dc9639d04521a0dfae12bbb923764f7c14"
+  },
+  "proxies": [
+    {
+      "address": "0x94f6139C33dAE55f3F96115f6F227Cfcb800df10",
+      "txHash": "0x4f2f22964fd141ce626cfc1d4ac34cc89b04b5e366ba8de4b8ee71dab6ff0445",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "fcdf767082c65e9e920d156077d2f2f1fae642af26ed466123c442aa1239ca81": {
+      "address": "0xA1fF851b5203C210C09D8579813EBb7B7d8bae96",
+      "txHash": "0x961de6e7d63ca205f602b9b3fb20a4e3cf08375901d8ea743e5e98f117626acc",
+      "layout": {
+        "storage": [
+          {
+            "label": "a",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Foo",
+            "src": "contracts\\Foo.sol:9"
+          },
+          {
+            "label": "b",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Foo",
+            "src": "contracts\\Foo.sol:10"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "fac3c7cd4e696790592fd048ca211d746e7ab3b9694f096898a2399ef743e955": {
+      "address": "0xbd7ccdC67A010B6101912F35f523AB17DC719198",
+      "txHash": "0xe69ad179c33efab71365718e00657376f56523d437a8bc8c3f8d8f0ab4ff31a7",
+      "layout": {
+        "storage": [
+          {
+            "label": "a",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Bar",
+            "src": "contracts\\Bar.sol:9"
+          },
+          {
+            "label": "b",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Bar",
+            "src": "contracts\\Bar.sol:10"
+          },
+          {
+            "label": "exists",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_uint256,t_bool)",
+            "contract": "Bar",
+            "src": "contracts\\Bar.sol:11"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_mapping(t_uint256,t_bool)": {
+            "label": "mapping(uint256 => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
